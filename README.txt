@@ -23,7 +23,7 @@ plugins
 theme
   - front-page.php (probably completely unnecessary; might remove)
   - functions
-    - fn-post-custom-fields.php (adds the vimeo custom field the post editor)
+    - fn-post-custom-fields.php (adds the vimeo custom field to the post editor)
     - fn-videos.php (adds functions for establishing the vimeo player and then pulling the video posts from the db)
   - functions.php (adds video thumbnails, includes fn-videos.php and fn-post-custom-fields.php)
   - includes
