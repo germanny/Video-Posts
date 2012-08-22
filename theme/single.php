@@ -3,7 +3,7 @@
  * The Template for displaying most single posts.
  */
 
-	if(in_category('videos')) {
+	if(in_category( VIDEO_CAT )) {
 
 		include 'single-video.php';
 

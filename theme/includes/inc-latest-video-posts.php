@@ -5,7 +5,7 @@
 	<article>
 		<ul>
 			<?php
-		$category_id = get_cat_ID('Videos'); // Grabbing the specific ID of the Category Name (not the slug).
+		$category_id = get_cat_ID( VIDEO_CAT ); // Grabbing the specific ID of the Category Name (not the slug).
     $args = array( 'numberposts' => 2, 'orderby' => 'post_date', 'order' => 'DESC', 'category' => $category_id, );
 
     $videoslist = get_posts( $args );foreach ($videoslist as $post) :  setup_postdata($post); ?>

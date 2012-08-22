@@ -1,4 +1,7 @@
 <?php
+/* Customize the variables here
+****************************************************************************************************************************************/
+define('VIDEO_CAT', 'video');
 
 /*IMAGES
 Add Post Thumbnail Images
