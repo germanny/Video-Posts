@@ -1,13 +1,6 @@
 <?php 
 $post_custom_fields =
 array(
-	"infographic" => array(
-		"name" => "infographic",
-		"std" => "",
-		"title" => "Is this an infographic post? If you check this box, we'll add a Pin It share option. The image width should be 800, and remember to remove the \"rows\" and \"cols\" attributes from the textarea area tag.",
-		"description" => "",
-		"type" => "checkbox"),
-
 	"vimeo" => array(
 	"name" => "vimeo",
 	"std" => "",
