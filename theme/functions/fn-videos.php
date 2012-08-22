@@ -34,10 +34,10 @@ function vimeo_vid($vimeo_meta) {
 /* =BEGIN: Get all the Videos
 Thanks Eric Rasch, @EricRasch
 ---------------------------------------------------------------------------------------------------- */
-function getVideos(){
+function getVideos($num_videos = 5){
   $category_id = get_cat_ID( VIDEO_CAT ); // Grabbing the specific ID of the Category Name (not the slug).
   $posts = get_posts(array(
-  	'posts_per_page'  => 5,
+  	'posts_per_page'  => $num_videos,
   	'category__in' => $category_id, // the 'category' here needs an ID #, not a slug.
   	'orderby'      => 'post_date',
   	'order'        => 'DESC',
