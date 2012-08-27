@@ -31,10 +31,10 @@ function vimeo_vid($vimeo_meta) {
 }
 
 
-/* =BEGIN: Get all the Videos that are of the CUSTOM POST TYPE
+/* =BEGIN: Get all the Videos that are of the CUSTOM POST TYPE (CPT)
 Thanks Eric Rasch, @EricRasch
 ---------------------------------------------------------------------------------------------------- */
-function getVideoCPTs($num_videos = 5){
+function get_videos_cpt($num_videos = 5){
 	$posts = get_posts(array(
 	'posts_per_page' => $num_videos,
 	'orderby' => 'post_date',
@@ -66,10 +66,10 @@ function getVideoCPTs($num_videos = 5){
 }
 
 
-/* =BEGIN: Get the Featured Videos if they are CUSTOM POST TYPES
+/* =BEGIN: Get the Featured Videos if they are CUSTOM POST TYPES (CPTS)
 Thanks Eric Rasch, @EricRasch
 ---------------------------------------------------------------------------------------------------- */
-function getFeaturedVideoCPTs($num_videos = 2, $size = medium){
+function get_featured_videos_cpts($num_videos = 2, $size = medium){
 	$posts = get_posts(array(
 	'posts_per_page' => $num_videos,
 	'orderby' => 'post_date',

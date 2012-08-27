@@ -11,11 +11,11 @@ Template Name: Videos List Page
 				</header>
 
 				<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-					<?php getFeaturedVideos(); ?>
+					<?php get_featured_videos(); ?>
 					<section class="page-content">
 						<?php the_content(); ?>
 					</section>
-					<?php getVideos(); ?>
+					<?php get_videos(); ?>
 				<?php endwhile; // end of the loop. ?>
         <div class="clearfix page_pagination">
             <span class="left"><?php previous_posts_link('&laquo; Newer Posts'); ?></span>
@@ -38,8 +38,8 @@ Template Name: Videos List Page
 		<h1>Video Page</h1>
 					<div class="entry-content">
 							<?php the_content(); // need to put a loop around this somehow, but I didn't work that out yet ?>
-							<?php getFeaturedVideos(); ?>
-							<?php // getVideos(-1); ?>
+							<?php get_featured_videos(); ?>
+							<?php // get_videos(-1); ?>
 		
 					</div><!-- /.entry-content -->
 		

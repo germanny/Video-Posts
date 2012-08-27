@@ -22,8 +22,8 @@ get_header(); ?>
 			<div class="entry-content">
 			
 				<?php the_post(); //the_content(); ?>
-				<?php getFeaturedVideoCPTs(); ?>
-				<?php // getVideos(-1); ?>
+				<?php get_featured_videos_cpts(); ?>
+				<?php // get_videos_cpt(-1); ?>
 				<?php rewind_posts(); ?>
 
 			</div><!-- /.entry-content -->

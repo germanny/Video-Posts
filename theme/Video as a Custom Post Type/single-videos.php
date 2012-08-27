@@ -45,7 +45,7 @@ if ( have_posts() ) while ( have_posts() ) : the_post(); $currentPost = $post->I
 
 			</div><!-- .post -->
 
-		<?php getVideoCPTs(4); ?>
+		<?php get_videos_cpt(4); ?>
 				<div id="nav-below" class="navigation">
 					<div><a href="<?php echo get_option('home')?>/videos/">View All Videos &rarr;</a></div>
 				</div><!-- #nav-below -->

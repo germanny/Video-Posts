@@ -34,7 +34,7 @@ function vimeo_vid($vimeo_meta) {
 /* =BEGIN: Get all the Videos
 Thanks Eric Rasch, @EricRasch
 ---------------------------------------------------------------------------------------------------- */
-function getVideos($num_videos = 5){
+function get_videos($num_videos = 5){
   $category_id = get_cat_ID( VIDEO_CAT ); // Grabbing the specific ID of the Category Name (not the slug).
   $posts = get_posts(array(
   	'posts_per_page'  => $num_videos,
@@ -67,7 +67,7 @@ function getVideos($num_videos = 5){
 /* =BEGIN: Get the Featured Videos
 Thanks Eric Rasch, @EricRasch
 ---------------------------------------------------------------------------------------------------- */
-function getFeaturedVideos(){
+function get_featured_videos(){
 	$catidVideos = get_cat_ID( VIDEO_CAT ); // Grabbing the specific ID of the Category Name (not the slug).
 	$catidFeatured = get_cat_ID('Featured'); // Grabbing the specific ID of the Category Name (not the slug).
 	$posts = get_posts(array(
